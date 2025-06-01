@@ -8,18 +8,19 @@ body {
     background-color: #090909;
 }
 
-.navbar {
-  background-color: rgb(12, 12, 12);
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(12, 12, 12);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            height: 74px;
+        }
 
 .navbar-left {
   display: flex;
