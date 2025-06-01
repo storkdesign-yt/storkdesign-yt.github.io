@@ -335,7 +335,7 @@ a {
 
 .image-wrapper:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
+  box-shadow: 0 0 100px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
   border: 2px solid rgba(224, 191, 2);
 }
 
