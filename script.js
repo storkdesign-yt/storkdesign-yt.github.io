@@ -10,7 +10,7 @@ var typed = new Typed(".auto-type", {
 const opinionsData = [
     {
       image: "images/discord_avatars/dreibon.png",
-      text: "Szybka i profesjonalna robota.",
+      text: "Szybka i jakościowa praca!",
       nickname: "Dreibon"
     },  
   ];
