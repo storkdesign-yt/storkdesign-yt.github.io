@@ -14,28 +14,37 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-right {
-float: right; /* Ustawienie na prawą stronę */
-padding: 14px 16px; /* Wypełnienie tekstu w kontenerze */
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-float: left;
-padding: 14px 14px;
-height: 100%; /* Wysokość loga równa wysokości navbara */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 14px;
 }
 
 .logo img {
-height: 60px;
-width: 60px; /* Wysokość loga - dostosowana wielkość */
+  height: 60px;
+  width: 60px;
 }
 
 .navbar a {
   font-family: 'Ubuntu', sans-serif;
-  float: left;
   display: block;
   color: rgb(184, 184, 184);
   text-align: center;
@@ -45,24 +54,24 @@ width: 60px; /* Wysokość loga - dostosowana wielkość */
 }
 
 .navbar a:after {
-content: "";
-position: absolute;
-background-color: rgb(252, 193, 0);
-height: 3px;
-width: 0;
-left: 0;
-bottom: -10px;
-transition: 0.3s;
-box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
+  content: "";
+  position: absolute;
+  background-color: rgb(252, 193, 0);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
 }
 
 .navbar a:hover{
-color: #ffffff;
+  color: #ffffff;
 }
 
 .navbar a:hover:after {
-width: 100%;
-box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
+  width: 100%;
+  box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
 }
 
 .footer {
