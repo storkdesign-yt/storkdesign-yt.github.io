@@ -1,5 +1,5 @@
 var typed = new Typed(".auto-type", {
-    strings: ["Jakość.", "Czas Realizaji.", "Szczegóły."],
+    strings: ["wysoką jakość.", "szybki czas realizaji.", "dopracowane szczegóły."],
     typeSpeed: 50,
     backSpeed: 50,
     startDelay: 2000,
