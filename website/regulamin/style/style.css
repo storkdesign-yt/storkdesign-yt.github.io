@@ -217,12 +217,12 @@ h2 {
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
+    border: 13px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid rgb(252, 193, 0);
+    border-top: 13px solid rgb(252, 193, 0);
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
