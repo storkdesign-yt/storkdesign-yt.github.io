@@ -115,7 +115,7 @@ body {
 }
 
 a {
-    color: #e5ff00;
+    color: #ffbb00;
     text-decoration:none
 }
 
@@ -205,6 +205,14 @@ a {
 
 oranyel {
     color: rgb(252, 193, 0);
+}
+
+reprle {
+    color: rgb(252, 0, 76);
+}
+
+aqme {
+    color: rgb(0, 252, 134);
 }
 
 pink {
