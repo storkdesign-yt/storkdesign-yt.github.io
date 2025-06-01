@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stork Design</title>
+    <link rel="icon" type="image/x-icon" href="images/sd_logo.png">
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
@@ -256,3 +264,112 @@
         #myDiv {
             display: none;
         }
+    </style>
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div id="header_bg">
+            <div class="header_bg">
+                <video autoplay loop muted>
+                    <source src="images/bg_video.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        
+        <header>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <a href="index">Strona Główna</a>
+                    <a href="regulamin">Regulamin</a>
+                </div>
+                <div class="logo">
+                    <img src="images/sd_logo.png" alt="Logo">
+                </div>
+                <div class="navbar-right">
+                    <a href="cennik">Cennik</a>
+                    <a href="https://www.behance.net/storkdesign" target="_blank">Portfolio</a>
+                    <a href="https://discord.gg/2dCYPHwNC4" target="_blank">Discord</a>
+                </div>
+                <button type="button" onclick="button_click()" id="nav-button" aria-expanded="false" aria-label="Toggle navigation" data-active="false">
+                    <i class="icon-menu"></i>
+                </button>
+            </div>
+        </header>
+        
+        <div class="nav-menu-onclick-div" id="nav-menu-onclick-div">
+            <ul class="nav-menu-onclick" id="nav-menu-onclick">
+                <li><a href="index">Strona Główna</a></li>
+                <li><a href="regulamin">Regulamin</a></li>
+                <li><a href="cennik">Cennik</a></li>
+                <li><a href="https://www.behance.net/storkdesign">Portfolio</a></li>
+                <li><a href="https://discord.gg/2dCYPHwNC4">Discord</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-blacker-screen">
+            <div class="header_text">
+                <h1 class="welcome_text">
+                    Witamy na 
+                    <span class="animated-text">Stork Design</span>
+                </h1>
+            </div>
+            <center>
+                <div class="under_header_text_div">
+                    <p class="under_header_text">Stawiamy na <span class="auto-type"></span></p>
+                </div>
+            </center>
+            
+            <!-- Add more content here as needed -->
+            <div style="height: 1000px; display: flex; align-items: center; justify-content: center;">
+                <p style="font-size: 2rem; text-align: center;">
+                    Your website content goes here...<br>
+                    <oranyel>Scroll to see the navigation in action!</oranyel>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+        
+        function button_click() {
+            const navMenu = document.getElementById("nav-menu-onclick-div");
+            const button = document.getElementById("nav-button");
+            
+            if (navMenu.style.display === "none" || navMenu.style.display === "") {
+                navMenu.style.display = "block";
+                navMenu.style.visibility = "visible";
+                button.setAttribute("data-active", "true");
+            } else {
+                navMenu.style.display = "none";
+                navMenu.style.visibility = "hidden";
+                button.setAttribute("data-active", "false");
+            }
+        }
+
+        // Auto-type effect (you can add the typed.js initialization here)
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof Typed !== 'undefined') {
+                var typed = new Typed('.auto-type', {
+                    strings: ['jakość', 'szybkość', 'profesjonalizm'],
+                    typeSpeed: 150,
+                    backSpeed: 150,
+                    loop: true
+                });
+            }
+        });
+    </script>
+</body>
+</html>
