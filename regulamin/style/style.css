@@ -47,13 +47,13 @@ width: 60px; /* Wysokość loga - dostosowana wielkość */
 .navbar a:after {
 content: "";
 position: absolute;
-background-color: rgb(160, 130, 255);
+background-color: rgb(252, 193, 0);
 height: 3px;
 width: 0;
 left: 0;
 bottom: -10px;
 transition: 0.3s;
-box-shadow: 0 0 200px 0 rgba(80, 65, 131, 0.699), 0 0 40px 0 rgba(145, 118, 233, 0.9);
+box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
 }
 
 .navbar a:hover{
@@ -62,7 +62,7 @@ color: #ffffff;
 
 .navbar a:hover:after {
 width: 100%;
-box-shadow: 0 0 200px 0 rgba(80, 65, 131, 0.699), 0 0 40px 0 rgba(145, 118, 233, 0.9);
+box-shadow: 0 0 200px 0 rgba(201, 171, 0, 0.699), 0 0 40px 0 rgba(226, 192, 1, 0.9);
 }
 
 .footer {
@@ -96,7 +96,7 @@ box-shadow: 0 0 200px 0 rgba(80, 65, 131, 0.699), 0 0 40px 0 rgba(145, 118, 233,
 }
 
 a {
-    color: #00b3ff;
+    color: #e5ff00;
     text-decoration:none
 }
 
@@ -173,7 +173,7 @@ pink {
 }
 
 rainbow {
-    background: linear-gradient(90deg, #00b3ff, rgb(160, 130, 255));
+    background: linear-gradient(90deg, #e5ff00, rgb(252, 193, 0));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -195,7 +195,7 @@ h2 {
 
 
 .animated-text {
-    background: linear-gradient(90deg, #00b3ff, rgb(160, 130, 255));
+    background: linear-gradient(90deg, #e5ff00, rgb(252, 193, 0));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -222,7 +222,7 @@ h2 {
     margin: -76px 0 0 -76px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid rgb(160, 130, 255);
+    border-top: 16px solid rgb(252, 193, 0);
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
