@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #090909;
+}
+
+.navbar {
+  background-color: rgb(12, 12, 12);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999
+}
+
+.navbar-right {
+float: right; /* Ustawienie na prawą stronę */
+padding: 14px 16px; /* Wypełnienie tekstu w kontenerze */
+}
+
+.logo {
+float: left;
+padding: 14px 14px;
+height: 100%; /* Wysokość loga równa wysokości navbara */
+}
+
+.logo img {
+height: 60px;
+width: 60px; /* Wysokość loga - dostosowana wielkość */
+}
+
+.navbar a {
+  font-family: 'Ubuntu', sans-serif;
+  float: left;
+  display: block;
+  color: rgb(184, 184, 184);
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar a:after {
+content: "";
+position: absolute;
+background-color: rgb(160, 130, 255);
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+box-shadow: 0 0 200px 0 rgba(80, 65, 131, 0.699), 0 0 40px 0 rgba(145, 118, 233, 0.9);
+}
+
+.navbar a:hover{
+color: #ffffff;
+}
+
+.navbar a:hover:after {
+width: 100%;
+box-shadow: 0 0 200px 0 rgba(80, 65, 131, 0.699), 0 0 40px 0 rgba(145, 118, 233, 0.9);
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(12, 12, 12);
+  padding: 30px;
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.footer_content {
+  flex: 1 !important;
+  margin: 0 10px !important;
+  color: #ffffff !important;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem !important;
+  margin-bottom: 10px !important;
+}
+
+.footer p {
+  margin: 0 !important;
+  font-size: 1rem !important;
+}
+
+a {
+    color: #00b3ff;
+    text-decoration:none
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .header_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header_bg video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.formated_text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formated_text p {
+    margin: 0 0 1rem; /* Dodajemy margines na dole każdego akapitu (1rem = 16px) */
+}
+
+.container {
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 80px auto;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+    margin-top: 130px;
+}
+
+.main_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    width: 20%;
+}
+
+blurple {
+    color: rgb(160, 130, 255)
+}
+
+pink {
+    color: #ff1565
+}
+
+rainbow {
+    background: linear-gradient(90deg, #00b3ff, rgb(160, 130, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: animate 4s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    scale: 150%;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.animated-text {
+    background: linear-gradient(90deg, #00b3ff, rgb(160, 130, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(160, 130, 255);
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:0.5s }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:0.5s }
+  }
+
+  #myDiv {
+    display: none;
+  }
