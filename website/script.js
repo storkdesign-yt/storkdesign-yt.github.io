@@ -76,7 +76,12 @@ const opinionsData = [
       image: "images/discord_avatars/dreibon.png",
       text: "Szybka i jakościowa praca!",
       nickname: "Dreibon"
-    },  
+    }, 
+    {
+      image: "images/discord_avatars/przybyl.png",
+      text: "Baner wykonany ekspresowo, a efekt końcowy naprawdę robi wrażenie. Estetyka, czytelność i klimat – wszystko na miejscu.",
+      nickname: "Przybyl"
+    },   
 ];
 
 let currentOpinionIndex = 0;
